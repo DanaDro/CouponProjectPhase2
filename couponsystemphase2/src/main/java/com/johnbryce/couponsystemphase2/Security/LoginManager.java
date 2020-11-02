@@ -23,7 +23,7 @@ import lombok.NoArgsConstructor;
 public class LoginManager {
 	
 	@Autowired
-	ApplicationContext ctx;
+	private ApplicationContext ctx;
 
 	public ClientService login(String email, String password, ClientType clientType) {
 		switch (clientType) {
